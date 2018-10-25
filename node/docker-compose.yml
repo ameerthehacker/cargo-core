@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  node-cargo:
+    image: node-cargo
+    volumes:
+      - ./src:/app/src
+    build:
+      context: .
+      dockerfile: ./src/Dockerfile 
